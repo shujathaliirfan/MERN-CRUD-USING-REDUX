@@ -1,0 +1,21 @@
+{
+  "users": [
+    {
+      "id": 23,
+      "name": "kamrans",
+      "gender": "male",
+      "email": "kamran@gmail.com",
+      "phone": "5464565464",
+      "city": "hyderabad"
+    },
+    {
+      "name": "Shujathali Irfansdfdsf",
+      "city": "Ambursdfds",
+      "email": "shujathali92@gmail.com",
+      "phone": "08220492655",
+      "gender": "male",
+      "age": "55",
+      "id": 63
+    }
+  ]
+}

@@ -22,6 +22,14 @@ const useStyles = makeStyles({
         width: '90%',
         margin: '50px 0 0 50px'
     },
+    center : {
+        display:'flex',
+        justifyContent:'center',
+        alignItem:'center',
+        marginTop:'12em',
+        
+    
+    },
     mid: {
         margin: '50px 0 0 50px'
         },
@@ -39,6 +47,7 @@ const useStyles = makeStyles({
         mid : {
             marginLeft:'18px'
         }
+        
     
    
     }
@@ -75,13 +84,9 @@ let {error} =  useSelector(state => state.users);
     //     setUsers(response.data);
     // }
 
-    if(loading) return  (<div >
+    if(loading) return  (<div className={classes.center}>
     <CircularProgress className={classes.mid}
-    
-    direction="column"
-    alignItems="center"
-    justify="center"
-    style={{ minHeight: '100vh' }}/>;
+   />;
     </div>)
 
     // if(error) return  <p>{error}</p>;

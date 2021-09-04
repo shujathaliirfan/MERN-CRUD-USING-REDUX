@@ -1,5 +1,5 @@
-export {
-    // deleteUser,createUser,editUser,
-    loadData,deleteUsers,addUserMethod,singleUser,updateUser
- } from './products.js'
+export {loadData,deleteUsers,addUserMethod,singleUser,updateUser } from './products.js'
+
+
+ export {LoginMethod,LogoutMethod,SignupMethod} from './Auth'
 

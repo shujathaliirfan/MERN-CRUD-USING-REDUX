@@ -6,6 +6,7 @@ import reportWebVitals from './reportWebVitals';
 import thunk from 'redux-thunk';
 import {composeWithDevTools, compositeWithDevTools} from 'redux-devtools-extension'
 import  UsersReducer from './stores/reducers/Users';
+import AuthReducer from './stores/reducers/Auth'
 import { Provider } from 'react-redux';
 import { combineReducers, createStore, applyMiddleware , compose} from 'redux';
 
@@ -13,7 +14,8 @@ import { combineReducers, createStore, applyMiddleware , compose} from 'redux';
 
 
 let rootReducer = combineReducers({
-  users : UsersReducer 
+  users : UsersReducer ,
+  auth : AuthReducer 
 })
 
 let store = createStore(rootReducer,composeWithDevTools(applyMiddleware(thunk)))
